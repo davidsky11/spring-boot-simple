@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: kafka-hello
+  kafka:
+    bootstrap-servers: localhost:32773
+    consumer:
+      group-id: 'demo'
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

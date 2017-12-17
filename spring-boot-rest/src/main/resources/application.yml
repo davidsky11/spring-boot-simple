@@ -1,0 +1,10 @@
+spring:
+  data:
+    rest:
+      base-path:
+      default-page-size: 10
+      limit-param-name:
+      max-page-size:
+      page-param-name:
+      return-body-on-create: false
+      return-body-on-update: true
