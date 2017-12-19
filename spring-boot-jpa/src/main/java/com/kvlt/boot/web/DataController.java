@@ -20,7 +20,7 @@ import java.util.List;
  * @author KVLT
  * @date 2017-12-17.
  */
-@RestController
+@RestController   // 等同于 @Controller 和 @ResponseBody
 public class DataController {
 
     // Spring Data JPA已自动为你注册bean，所以可以自动注入
