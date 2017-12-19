@@ -17,6 +17,8 @@
         <module>spring-boot-json</module>
         <module>spring-boot-batch</module>
         <module>spring-boot-batch</module>
+        <module>spring-boot-mybatis1</module>
+        <module>spring-boot-mybatis2</module>
     </modules>
 
     <!--

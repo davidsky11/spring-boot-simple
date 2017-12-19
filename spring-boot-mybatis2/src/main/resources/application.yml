@@ -1,0 +1,26 @@
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot?characterEncoding=UTF-8
+    username: root
+    password: 123456
+    platform: mysql
+    schema: classpath:schema.sql  # classpath和冒号之间不能有空格
+  application:
+    name: spring-boot-mybatis
+  jackson:
+    serialization:
+      indent_output: true
+logging:
+  level:
+    org.springframework.data: DEBUG
+
+mybatis:
+  type-aliases-package: com.kvlt.boot.entity
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
