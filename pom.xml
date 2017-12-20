@@ -19,6 +19,8 @@
         <module>spring-boot-batch</module>
         <module>spring-boot-mybatis1</module>
         <module>spring-boot-mybatis2</module>
+        <module>spring-boot-thymeleaf</module>
+        <module>spring-boot-jsp</module>
     </modules>
 
     <!--
