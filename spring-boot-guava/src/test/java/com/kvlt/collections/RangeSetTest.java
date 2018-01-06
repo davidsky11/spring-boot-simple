@@ -22,5 +22,6 @@ public class RangeSetTest {
         rangeSet.add(Range.closedOpen(15, 20)); //相连区间; {[1,10], [11,20)}
         rangeSet.add(Range.openClosed(0, 0)); //空区间; {[1,10], [11,20)}
         rangeSet.remove(Range.open(5, 10)); //分割[1, 10]; {[1,5], [10,10], [11,20)}
+        System.out.println(rangeSet.contains(8));
     }
 }

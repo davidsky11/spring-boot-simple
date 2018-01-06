@@ -5,6 +5,8 @@ import com.google.common.collect.RangeMap;
 import com.google.common.collect.TreeRangeMap;
 import org.junit.Test;
 
+import java.util.Map;
+
 /**
  * RangeMapTest
  *  RangeMap描述了”不相交的、非空的区间”到特定值的映射。
@@ -21,5 +23,11 @@ public class RangeMapTest {
         rangeMap.put(Range.open(3, 6), "bar"); //{[1,3] => "foo", (3,6) => "bar", [6,10] => "foo"}
         rangeMap.put(Range.open(10, 20), "foo"); //{[1,3] => "foo", (3,6) => "bar", [6,10] => "foo", (10,20) => "foo"}
         rangeMap.remove(Range.closed(5, 11)); //{[1,3] => "foo", (3,5) => "bar", (11,20) => "foo"}
+
+        Map<Range<Integer>, String> map = rangeMap.asMapOfRanges();
+        System.out.println(map.containsValue("foo"));
+
+        System.out.println(rangeMap);
     }
+
 }
